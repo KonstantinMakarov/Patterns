@@ -1,14 +1,17 @@
 package builder;
 
+import builder.soldierbuider.AbstractHouseBuilder;
+
 /**
  * Created by Kanstantsin_Makarau on 11-Sep-15.
  */
 public class Director {
 
-    public Soldier createSoldier(AbstractSoldierBuilder builder){
-        builder.buildSoldierAttackDistance();
-        builder.buildSoldierHitPoints();
-        builder.buildSoldierWeapon();
-        return builder.getSoldier();
+    public House createHouse(AbstractHouseBuilder builder){
+        builder.createEmptyHouse();
+        builder.buildHouseBase();
+        builder.buildHouseWalls();
+        builder.buildHouseRoof();
+        return builder.getHouse();
     }
 }

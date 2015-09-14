@@ -1,17 +1,17 @@
 package builder;
 
-import builder.specificbuider.WarriorBuilder;
+import builder.soldierbuider.AbstractHouseBuilder;
+import builder.soldierbuider.DachaBuilder;
 
 /**
  * Created by Kanstantsin_Makarau on 11-Sep-15.
  */
 public class Main {
     public static void main(String[] args) {
-        AbstractSoldierBuilder builder = new WarriorBuilder();
+        AbstractHouseBuilder builder = new DachaBuilder();
         Director director = new Director();
 
-
-        Soldier soldier = director.createSoldier(builder);
-        System.out.println(soldier.getAttackDistance());
+        House house = director.createHouse(builder);
+        System.out.println(house.getRoof());
     }
 }
