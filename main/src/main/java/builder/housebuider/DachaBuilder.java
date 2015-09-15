@@ -1,4 +1,4 @@
-package builder.soldierbuider;
+package builder.housebuider;
 
 /**
  * Created by Kanstantsin_Makarau on 11-Sep-15.

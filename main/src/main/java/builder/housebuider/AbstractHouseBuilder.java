@@ -1,4 +1,4 @@
-package builder.soldierbuider;
+package builder.housebuider;
 
 import builder.House;
 

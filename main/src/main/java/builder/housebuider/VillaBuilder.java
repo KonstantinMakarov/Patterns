@@ -1,22 +1,22 @@
-package builder.soldierbuider;
+package builder.housebuider;
 
 /**
  * Created by Kanstantsin_Makarau on 11-Sep-15.
  */
-public class HighRiseBuilder extends AbstractHouseBuilder {
+public class VillaBuilder extends AbstractHouseBuilder {
 
     @Override
     public void buildHouseWalls() {
-        house.setWall("blue");
+        house.setWall("gold");
     }
 
     @Override
     public void buildHouseBase() {
-        house.setBase("red");
+        house.setBase("dark-gold");
     }
 
     @Override
     public void buildHouseRoof() {
-        house.setRoof("black");
+        house.setRoof("glass");
     }
 }

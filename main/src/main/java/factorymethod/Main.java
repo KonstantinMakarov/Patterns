@@ -10,6 +10,8 @@ import java.util.List;
 
 /**
  * Created by Kanstantsin_Makarau on 14-Sep-15.
+ *
+ * instance: http://allmycircuitz.blogspot.com.by/2013/07/factory-method.html
  */
 public class Main {
 

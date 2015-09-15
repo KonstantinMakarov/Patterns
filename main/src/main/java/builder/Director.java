@@ -1,6 +1,6 @@
 package builder;
 
-import builder.soldierbuider.AbstractHouseBuilder;
+import builder.housebuider.AbstractHouseBuilder;
 
 /**
  * Created by Kanstantsin_Makarau on 11-Sep-15.
