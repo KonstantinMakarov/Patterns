@@ -4,6 +4,7 @@ test-output/
 test-nbccom/
 
 #ide project files
+*.iml
 .settings/
 .idea/
 .classpath
