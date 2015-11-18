@@ -11,8 +11,10 @@ public class TheBestSingleton {
 
     public static TheBestSingleton getInstance(){
         if(theBestSingleton == null){
-            synchronized (TheBestSingleton.class){
-                return theBestSingleton = new TheBestSingleton();
+            synchronized (TheBestSingleton.class){  //use double check
+                if(theBestSingleton == null) {
+                    return theBestSingleton = new TheBestSingleton();
+                }
             }
         }
         return theBestSingleton;
