@@ -1,8 +1,8 @@
-package irobot;
+package irobot.creationbynew.entity.cleaner;
 
 /**
  * Created by Kanstantsin_Makarau on 19-Nov-15.
  */
-public interface VacuumCleaner {
+public interface Cleaner {
     void cleanRoom() throws Exception;
 }
