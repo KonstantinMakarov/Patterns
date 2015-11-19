@@ -3,15 +3,14 @@ package irobot;
 /**
  * Created by Kanstantsin_Makarau on 19-Nov-15.
  */
-public class IRobot implements VacuumCleaner, Clock {
-    private VacuumCleaner vacuumCleanerBehavior = new VacuumCleanerBehavior();  //spring has to be there
-    private Clock clockBehavior = new ClockBehavior();
+public class IRobot {
+    private Cleaner cleaner = new VacuumCleaner();  //spring has to be there
+    private Speaker speaker = new SimpleSpeaker();
 
     public void cleanRoom() throws Exception {
-        vacuumCleanerBehavior.cleanRoom();
+        speaker.speak("Started");
+        cleaner.cleanRoom();
+        speaker.speak("Finished");
     }
 
-    public void sayCurrentTime() {
-        clockBehavior.sayCurrentTime();
-    }
 }
