@@ -9,6 +9,7 @@ import java.util.Set;
  */
 public class ObjectFactory {
 
+    private static volatile ObjectFactory objectFactory;
     private Reflections reflections;
 
     private ObjectFactory(){
@@ -16,7 +17,14 @@ public class ObjectFactory {
     }
 
     public static ObjectFactory getInstance() {
-        return new ObjectFactory();
+        if(objectFactory == null){
+            synchronized (ObjectFactory.class) {
+                if (objectFactory == null) {
+                    return new ObjectFactory();
+                }
+            }
+        }
+        return  objectFactory;
     }
 
     public <T> T create(Class<T> type) throws Exception {
