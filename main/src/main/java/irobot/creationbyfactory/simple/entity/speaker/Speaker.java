@@ -1,4 +1,4 @@
-package irobot.creationbyfactory.entity.speaker;
+package irobot.creationbyfactory.simple.entity.speaker;
 
 /**
  * Created by Kanstantsin_Makarau on 19-Nov-15.

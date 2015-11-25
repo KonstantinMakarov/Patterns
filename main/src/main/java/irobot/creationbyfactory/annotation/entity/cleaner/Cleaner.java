@@ -1,4 +1,4 @@
-package irobot.creationbyfactory.entity.cleaner;
+package irobot.creationbyfactory.annotation.entity.cleaner;
 
 /**
  * Created by Kanstantsin_Makarau on 19-Nov-15.

@@ -1,4 +1,4 @@
-package irobot.creationbyfactory;
+package irobot.creationbyfactory.simple;
 
 import org.reflections.Reflections;
 

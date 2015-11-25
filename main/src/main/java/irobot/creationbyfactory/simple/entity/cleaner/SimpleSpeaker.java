@@ -1,7 +1,7 @@
-package irobot.creationbyfactory.entity.cleaner;
+package irobot.creationbyfactory.simple.entity.cleaner;
 
 
-import irobot.creationbyfactory.entity.speaker.Speaker;
+import irobot.creationbyfactory.simple.entity.speaker.Speaker;
 
 /**
  * Created by Kanstantsin_Makarau on 19-Nov-15.

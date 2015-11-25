@@ -1,8 +1,8 @@
-package irobot.creationbyfactory.entity;
+package irobot.creationbyfactory.simple.entity;
 
-import irobot.creationbyfactory.ObjectFactory;
-import irobot.creationbyfactory.entity.cleaner.Cleaner;
-import irobot.creationbyfactory.entity.speaker.Speaker;
+import irobot.creationbyfactory.simple.ObjectFactory;
+import irobot.creationbyfactory.simple.entity.cleaner.Cleaner;
+import irobot.creationbyfactory.simple.entity.speaker.Speaker;
 
 import java.util.Random;
 
