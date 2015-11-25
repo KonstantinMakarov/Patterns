@@ -54,7 +54,7 @@ public final class EpamClient {
         }
 
         public Builder date(Date date){
-            this.date = new Date(date.getTime());
+            this.date = new Date(date.getTime());   //defensiveCopy
             return this;
         }
 
