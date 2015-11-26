@@ -1,37 +1,33 @@
 package composite;
 
-import composite.etities.CompositeRelative;
-import composite.etities.LeafRelative;
+import composite.etities.container.*;
+import composite.etities.leaf.*;
 
 /**
  * Created by Kanstantsin_Makarau on 18-Sep-15.
  */
 public class Main {
     public static void main(String[] args){
-        LeafRelative iAm= new LeafRelative("Konstantin");
-        LeafRelative nephew = new LeafRelative("Timur");
-        LeafRelative cousin = new LeafRelative("Artem");
-        CompositeRelative mum = new CompositeRelative("Irina");
-        CompositeRelative dad = new CompositeRelative("Gennady");
-        CompositeRelative stepbrother = new CompositeRelative("Anton");
-        CompositeRelative grandfather = new CompositeRelative("Yura");
-        CompositeRelative aunt = new CompositeRelative("Eugene");
+        AbstractLeaf iAm= new IamLeaf("Konstantin", 22);
+        AbstractLeaf nephew = new NephewLeaf("Timur", 8);
+        AbstractLeaf cousin = new CousinLeaf("Artem", 7);
 
-        mum.addRelative(iAm);
-        mum.addRelative(stepbrother);
+        AbstractContainer mum = new MumContainer("Irina", 55);
+        AbstractContainer brother = new BrotherContainer("Anton", 35);
+        AbstractContainer grandfather = new GrandfatherContainer("Yura", 81);
+        AbstractContainer aunt = new AuntContainer("Eugene", 42);
 
-        dad.addRelative(iAm);
+        mum.add(iAm);
+        mum.add(brother);
 
-        stepbrother.addRelative(nephew);
+        brother.add(nephew);
 
-        aunt.addRelative(cousin);
+        aunt.add(cousin);
 
-        grandfather.addRelative(mum);
-        grandfather.addRelative(aunt);
+        grandfather.add(mum);
+        grandfather.add(aunt);
 
-        grandfather.sayInfo();
-        System.out.println();
-        dad.sayInfo();
 
+        System.out.println("grandfather general age : " + grandfather.calculateAge());
     }
 }
