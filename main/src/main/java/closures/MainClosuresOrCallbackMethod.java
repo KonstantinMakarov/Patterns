@@ -27,7 +27,6 @@ public class MainClosuresOrCallbackMethod {
         // when java8 included lambda
         int java8Copies = EqualCounterUtil.countDuplicates(persons, vladimir,
                 (Person first, Person second) -> first.getName().equals(second.getName()));
-
         System.out.println(java8Copies);
     }
 
